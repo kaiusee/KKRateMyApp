@@ -23,7 +23,7 @@ KKRateMyApp.sharedInstance.appName = "My Awesome App"
 KKRateMyApp.sharedInstance.numberOfTimesBeforePrompts = X
 ```
 
-2. In your main ViewController. Call 
+2. In your main ViewController in ViewDidLoad. Call 
 ```swift
 KKRateMyApp.sharedInstance.rateApp()
 ```
