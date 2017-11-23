@@ -13,8 +13,8 @@ All you need is import `KKRateMyApp.swift` to your project folder.
 1. In your AppDelegate, `didFinishLaunchingWithOptions` add the following:
 
 ```swift
-//Replace X with the number of tries before you prompt the user with the rating alert.
-KKRateMyApp.sharedInstance.numberOfTimesBeforePrompts = X
+//Replace with the number of tries before you prompt the user with the rating alert. (default is 5)
+ KKRateMyApp.sharedInstance.numberOfTimesBeforePrompts = 5
 
 //This will check how many times the app has run and based on the number you provided earlier it will display the rating alert view. 
 KKRateMyApp.sharedInstance.rateApp()
