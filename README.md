@@ -22,7 +22,7 @@ KKRateMyApp.sharedInstance.rateApp()
 
 ## Screenshot
 
-![](https://github.com/kaiusee/RateMyApp/blob/master/KKRateMyApp.png)
+![](https://github.com/kaiusee/RateMyApp/blob/master/KKRateMyApp.jpg)
 
 
 ## License
