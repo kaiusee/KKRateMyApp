@@ -14,7 +14,7 @@ class KKRateMyApp {
     static let sharedInstance = KKRateMyApp()
     var numberOfTimesBeforePrompts: Int = 5
     private let userDefaultsKey = "kkRateAppUsageCount"
-
+    
     func rateApp() {
         
         var usageCount: Int = UserDefaults.standard.integer(forKey: userDefaultsKey)
@@ -23,6 +23,7 @@ class KKRateMyApp {
             UserDefaults.standard.set(usageCount, forKey: userDefaultsKey)
             if usageCount == self.numberOfTimesBeforePrompts {
                 SKStoreReviewController.requestReview()
+                UserDefaults.standard.set(0, forKey: userDefaultsKey)
             }
         }
         else {
@@ -30,4 +31,3 @@ class KKRateMyApp {
         }
     }
 }
-
