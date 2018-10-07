@@ -1,5 +1,6 @@
 # KKRateMyApp for Swift
-KKRateMyApp is a simple Swift rate app library that prompts your app users to rate the app after using it for a X times. 
+KKRateMyApp is a simple Swift rate app library that prompts your app users to rate the app after using it for a X times.
+If the user didn't review your app at the time, they will be prompted again after X times. 
 
 ## Requirements
 * Xcode 8 or higher
