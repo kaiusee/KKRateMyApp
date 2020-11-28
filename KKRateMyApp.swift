@@ -12,7 +12,7 @@ import StoreKit
 class KKRateMyApp {
     
     static let sharedInstance = KKRateMyApp()
-    var numberOfTimesBeforePrompts: Int = 5
+    var numberOfTimesBeforePromptingTheUser: Int = 5
     private let userDefaultsKey = "kkRateAppUsageCount"
     
     func rateApp() {
@@ -21,7 +21,7 @@ class KKRateMyApp {
         if usageCount > 0 {
             usageCount += 1
             UserDefaults.standard.set(usageCount, forKey: userDefaultsKey)
-            if usageCount == self.numberOfTimesBeforePrompts {
+            if usageCount == self.numberOfTimesBeforePromptingTheUser {
                 
                 if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
                     SKStoreReviewController.requestReview(in: scene)
