@@ -11,7 +11,7 @@ If the user didn't review your app at the time, they will be prompted again afte
 All you need is import `KKRateMyApp.swift` to your project folder.
 
 ## Usage Example
-1. In your AppDelegate, `didFinishLaunchingWithOptions` add the following:
+In your AppDelegate, `didFinishLaunchingWithOptions` add the following:
 
 ```swift
 // Call this func below with the number of times you would like to trigger the app rating 
