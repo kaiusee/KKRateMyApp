@@ -3,8 +3,8 @@ KKRateMyApp is a simple Swift rate app library that prompts your app users to ra
 If the user didn't review your app at the time, they will be prompted again after X times. 
 
 ## Requirements
-* Xcode 8 or higher
-* iOS 10.3 or higher
+* Xcode 12 or higher
+* iOS 14.0 or higher
 
 ## Installation
 ### Manual Install
